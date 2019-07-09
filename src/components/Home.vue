@@ -1,6 +1,9 @@
 <template lang="pug">
-  .Home
-    search
+	.Home
+		.Home-test
+			input( type="text" v-model="test")
+			p {{test}}
+		search
 </template>
 
 <script>
@@ -10,7 +13,8 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+	  test: 'hello'
     }
   },
   components: {
@@ -29,9 +33,6 @@ export default {
    margin: auto;
    width: 40%;
  }
-h1, h2 {
-  font-weight: normal;
-}
 ul {
   list-style-type: none;
   padding: 0;
